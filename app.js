@@ -38,6 +38,14 @@ class Character{
 const xin1 = new Character('新', 'new', 'xin1', '心', '信' );
 const hao3 = new Character('好', 'good', 'hao3', '号', '浩' );
 
+
+
+
+
+
+
+
+
 const listo = [xin1, hao3];
 
 addbutton.addEventListener('click', e => {
@@ -82,3 +90,18 @@ addbutton.addEventListener('click', e => {
 
 //add characters to database
 console.log(xin1)
+
+const getChar = db.collection('characters').get()
+    .then(snapshot => console.log(snapshot.docs[0].data()));
+
+
+
+const myarray = [];
+
+    db.collection('characters').get()
+    .then(snapshot => {
+        snapshot.docs.forEach(doc => (myarray.push(doc.data())))
+        console.log(myarray);
+    }).catch(err => {
+        console.log(err)
+    });
