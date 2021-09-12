@@ -1,0 +1,52 @@
+.central{
+    max-width: 500px;
+    background-color: #999888;
+    margin: auto;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.heading{
+    max-width: 500px;
+    background-color: #999;
+    margin: auto;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+h1{
+text-align: center;
+}
+
+.button{
+    margin-top: 100px;
+background-color: red;
+position: absolute;
+}
+
+.button:hover{
+    background-color: green;
+}
+
+.info{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.eachone{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+span{
+    flex-direction: column;
+    display: flex;
+    padding: 5px;
+}

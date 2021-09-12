@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>classtest</title>
+</head>
+<body>
+    <div class="heading">
+        <h1>CHARACTERS</h1>
+    </div>
+    <div class="central">
+        <h1>list</h1>
+        <button class="button">add</button>
+    </div>
+    <div class="info">
+        <div class="eachone">
+            <span class="char"></span>
+            <span class="eng"></span>
+            <span class="pin"></span>
+            <span class="others"></span>
+         </div>
+    </div>
+    
+
+
+
+
+
+    <script src="https://www.gstatic.com/firebasejs/5.8.4/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/5.8.4/firebase-firestore.js"></script>
+  <script>
+    // Initialize Firebase
+    var config = {
+    apiKey: "AIzaSyB3zqrWJFniSOCK9blO0JJo12GaBi81h40",
+    authDomain: "characters-ef097.firebaseapp.com",
+    projectId: "characters-ef097",
+    storageBucket: "characters-ef097.appspot.com",
+    messagingSenderId: "970160463186",
+    appId: "1:970160463186:web:8b582fe7feeee7e45e2e8b"
+  };
+    firebase.initializeApp(config);
+    const db = firebase.firestore();  
+  </script>
+
+
+ 
+
+
+
+
+      
+</body>
+<script src="app.js"></script>
+</html>
